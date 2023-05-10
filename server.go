@@ -4,6 +4,7 @@ import (
 	"log"
 	"net"
 
+	"github.com/spodolaks/gymkhana_main/gymkhana_main"
 	"google.golang.org/grpc"
 )
 
@@ -14,8 +15,7 @@ func main() {
 	}
 
 	grpcServer := grpc.NewServer()
-
-	chat.RegisterChatServiceServer(grpcServer, &s)
+	gymkhana_main.RegisterChatServiceServer(grpcServer, &s)
 
 	if err := grpcServer.Serve(lis); err != nil {
 		log.Fatalf("Failed to serve: %s", err)

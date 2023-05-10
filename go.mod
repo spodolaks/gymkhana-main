@@ -1,4 +1,4 @@
-module gymkhana-backend
+module github.com/spodolaks/gymkhana-main
 
 go 1.20
 

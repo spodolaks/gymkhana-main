@@ -1,4 +1,4 @@
-package chat
+package gymkhana_main
 
 import (
 	context "context"

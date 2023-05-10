@@ -4,7 +4,7 @@
 // 	protoc        v3.21.12
 // source: chat.proto
 
-package chat
+package gymkhana_main
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"

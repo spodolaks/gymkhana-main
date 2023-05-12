@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package usermngmt;
+
+option go_package = "github.com/spodolaks/gymkhana_main/go-usermngmt-grpc; go_usermngmt_grpc";
+
+service UserManagement {
+    rpc CreateNewUser (NewUser) returns (User) {}
+}
+
+message NewUser {
+    string name = 1;
+    int32 age = 2;
+}
+
+message User {
+    string name = 1;
+    int32 age = 2;
+    int32 id = 3;
+}
